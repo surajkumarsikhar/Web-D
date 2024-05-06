@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* class Selector */
+        .new{
+            color:blue
+        }
+        /* ID selector */
+        #cool{
+            color: red;
+        }
+
+        /* element.id selector */
+        p.blue{
+            color: aqua ;
+        }
+
+        /* child selector */
+        div > h1{
+            background-color: red;
+        }
+
+        /* descendant selector */
+        div h4{
+            color : greenyellow
+
+        }
+        /* Universal Selector */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* PSEUDO SELECTORS */
+        a:visited{
+            color : red;
+
+        }
+
+        a:link{
+            color: rgb(255, 145, 0);
+        }
+
+        a:active{
+            color:rgb(170, 0, 255);
+        }
+
+        a:hover{
+            color:black
+        }
+
+        /* First child selector */
+        h1:first-child{
+            background-color: blueviolet;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class = "new">
+        <h1>my details</h1>
+        <p>Hii I am Suraj Kumar</p><br>
+        <p class="blue">I am a student at silicon institute of technology.</p><br>
+        <article>
+            <h4>i am learning web development</h4>
+        </article>
+    </div>
+
+    <a href="http://google.com">New</a>
+
+    <span id="cool">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, facilis. Consectetur quia voluptatum, veniam reiciendis possimus a repellendus. Ipsum, impedit.</p>
+        <pre>
+            <a href="https://Google.com">Google</a>
+            <a href="https://Linkedin.com">Linkedin</a>
+            <a href="https://Instagram.com">Instagram</a>
+        </pre>
+    </span>
+    
+</body>
+</html>
