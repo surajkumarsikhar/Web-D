@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.15rem;
+            cursor: pointer;
+        }
+
+        .dropdown-btn svg {
+            width: 12px;
+            height: 12px;
+            fill: #333;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 36px;
+            left: 0;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdown li {
+            margin-bottom: 0.5rem;
+        }
+
+        .dropdown a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .dropdown-btn.active .dropdown {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <button class="dropdown-btn">
+                    Download App
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L3 6L6 3" stroke="#333" stroke-width="2" />
+                    </svg>
+                </button>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#mac-windows">MacOS & Windows</a></li>
+                        <li><a href="#linux">Linux</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+
+        dropdownBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

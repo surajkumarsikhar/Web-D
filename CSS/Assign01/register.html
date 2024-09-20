@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      table {
+        margin: auto;
+        border-collapse: collapse;
+        padding: 10px;
+        width: 50%;
+        /* border-style: groove; */
+      }
+      td {
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table border="2">
+        <tr>
+          <td colspan="2" style="text-align: center; padding: 0px">
+            <h1>Registration Form</h1>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" style="" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="id">ID:</label></td>
+          <td><input type="text" id="id" name="id" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password" name="password" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="email">E-Mail ID:</label></td>
+          <td><input type="text" id="email" name="email" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="age">Age:</label></td>
+          <td><input type="text" id="age" name="age" /></td>
+        </tr>
+
+        <tr>
+          <td><label>Gender:</label></td>
+          <td>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="address">College Address:</label></td>
+          <td>
+            <textarea id="address" name="address" rows="4" cols="30"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="branch">Branch:</label></td>
+          <td>
+            <select id="branch" name="branch">
+              <option value="cse">Computer Science Engineering</option>
+              <option value="cst">Computer Science And Technology</option>
+              <option value="ece">Electronics and Communication</option>
+              <option value="mech">Mechanical Engineering</option>
+              <option value="eee">Electrical Engineering</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Technical Skills:</label></td>
+          <td>
+            <input type="checkbox" id="c" name="skills" value="C" />
+            <label for="c">C</label>
+            <input type="checkbox" id="java" name="skills" value="Java" />
+            <label for="java">Java</label>
+            <input type="checkbox" id="python" name="skills" value="Python" />
+            <label for="python">Python</label>
+            <input type="checkbox" id="jsp" name="skills" value="JSP" />
+            <label for="jsp">JSP</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="resume">Resume Upload:</label></td>
+          <td><input type="file" id="resume" name="resume" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
